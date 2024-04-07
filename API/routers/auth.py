@@ -8,10 +8,27 @@ auth_router = APIRouter()
 
 @auth_router.post("/login", tags=['auth'], response_model=dict, status_code=200)
 def login(user: User) -> dict:
+    """
+    Authenticate user and generate a new JSON Web Token (JWT)
+
+    Parameters
+    ----------
+    user : User
+        The user to be authenticated
+
+    Returns
+    -------
+    dict
+        A dictionary with the JWT token
+
+    Raises
+    ------
+    HTTPException
+        If the user credentials are invalid
+    """
     if user.email == "admin@gmail.com" and user.password == "admin":
         token = create_token(data=user.model_dump())
         return JSONResponse(content={"token": token}, 
                             status_code=200)
     else:
-        return JSONResponse(content={"message": "Invalid credentials"},
-                            status_code=401)
+        raise HTTPException(status_code=401, detail="Invalid credentials")

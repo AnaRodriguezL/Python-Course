@@ -9,7 +9,7 @@ class Movie(BaseModel):
     rating: float = Field(default=10, ge=0, le=10)
     category: str = Field(default="Comedia", min_length=3, max_length=15)
     
-    # Configuracion de la documentacion
+    # Documentation configuration
     class Config:
         model_config = {
         "json_schema_extra": {
