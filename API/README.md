@@ -1,49 +1,49 @@
-# Métodos HTTP en la API
+# HTTP Methods in the API
 
-## ¿Qué es HTTP?
+## What is HTTP?
 
-HTTP, o Protocolo de Transferencia de Hipertexto, es un sistema que define cómo se envían y reciben mensajes a través de la web. En la API que se construirá, se utilizará HTTP para comunicarse con el servidor y realizar diferentes acciones sobre los datos, como crear, obtener, modificar o eliminar información. 🌐
+HTTP, or Hypertext Transfer Protocol, is a system that defines how messages are sent and received over the web. In the API to be built, HTTP will be used to communicate with the server and perform different actions on the data, such as creating, retrieving, modifying, or deleting information. 🌐
 
-## Métodos HTTP Básicos
+## Basic HTTP Methods
 
-Existen varios métodos HTTP, pero nos centraremos en los más importantes para construir la API:
+There are several HTTP methods, but we will focus on the most important ones for building the API:
 
-- **POST:** Se usa para crear un nuevo recurso. Por ejemplo, agregar una nueva película a la base de datos. 📝
+- **POST:** Used to create a new resource. For example, adding a new movie to the database. 📝
 ```python
 @app.post()
 ```
-- **GET:** Se usa para consultar información. Con él, se puede obtener la lista de películas o detalles de una película específica. 📥
+- **GET:** Used to retrieve information. With it, you can obtain the list of movies or details of a specific movie. 📥
 ```python
 @app.get()
 ```
-- **PUT:** Se usa para modificar un recurso existente. Si se necesita cambiar la información de una película, se usará este método. 🔄
+- **PUT:** Used to modify an existing resource. If you need to change the information of a movie, this method will be used. 🔄
 ```python
 @app.put()
 ```
-- **DELETE:** Como su nombre lo indica, se usa para eliminar un recurso. Si se quiere quitar una película de la base de datos. ❌
+- **DELETE:** As the name suggests, used to delete a resource. If you want to remove a movie from the database. ❌
 ```python
 @app.delete()
 ```
 
-## La API de Películas
+## The Movies API
 
-A lo largo del curso, se construirá una API que proporcionará información sobre películas. Aquí hay algunas cosas que se harán:
+Throughout the course, an API will be built that will provide information about movies. Here are some things that will be done:
 
-- **Consulta de todas las películas:** Utilizando el método GET, se solicitarán datos de todas las películas disponibles. 🎬
-- **Filtro de películas:** Se podrá buscar películas por su ID o categoría, usando GET junto con parámetros específicos. 🔍
-- **Registro de películas:** Para añadir nuevas películas a la base de datos, se usa el método POST. 📝
-- **Modificación y eliminación:** Se completará la API con la capacidad de modificar (con PUT) y eliminar películas (con DELETE). 🔄❌
+- **Fetching all movies:** Using the GET method, data from all available movies will be requested. 🎬
+- **Filtering movies:** Movies can be searched by their ID or category, using GET along with specific parameters. 🔍
+- **Recording movies:** To add new movies to the database, the POST method is used. 📝
+- **Modification and deletion:** The API will be completed with the ability to modify (with PUT) and delete movies (with DELETE). 🔄❌
 
-Esta sección de la API también tratará con los siguientes conceptos específicos de FastAPI:
+This section of the API will also deal with the following FastAPI-specific concepts:
 
-- **Request:** La solicitud enviada al servidor por un cliente, que incluye información sobre el método HTTP, los encabezados y el cuerpo de la solicitud. 📤
+- **Request:** The request sent to the server by a client, which includes information about the HTTP method, headers, and body of the request. 📤
 ```http
 GET /movies HTTP/1.1
 Host: api.example.com
 Content-Type: application/json
 ```
 
-- **Response:** La respuesta devuelta por el servidor al cliente después de procesar la solicitud, que incluye el código de estado HTTP, los encabezados y el cuerpo de la respuesta. 📥
+- **Response:** The response returned by the server to the client after processing the request, which includes the HTTP status code, headers, and body of the response. 📥
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -55,7 +55,7 @@ Content-Type: application/json
 }
 ```
 
-- **Body:** El contenido de la solicitud o respuesta, que puede ser cualquier tipo de datos, como texto, JSON o binario. 📦
+- **Body:** The content of the request or response, which can be any type of data, such as text, JSON, or binary. 📦
 ```http
 {
   "title": "Titanic",
@@ -64,7 +64,7 @@ Content-Type: application/json
 }
 ```
 
-- **Headers:** Los encabezados de la solicitud o respuesta, que contienen información adicional sobre la solicitud o respuesta, como el tipo de contenido, la longitud del cuerpo, etc. 📑
+- **Headers:** The headers of the request or response, which contain additional information about the request or response, such as the content type, body length, etc. 📑
 ```http
 Content-Type: application/json
 Content-Length: 67
