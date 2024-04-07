@@ -1,12 +1,10 @@
 # Python 🐍
 
-## What is Python and Why Learn It? 🤔
-
 Python is a high-level, interpreted, interactive, and object-oriented programming language created by the Dutch programmer Guido Van Rossum in the late 1980s. Since its release in 1991, Python has evolved significantly and has become one of the most popular programming languages in the world. It is known for its clear and simple syntax, which makes it easy to learn. Additionally, its interpretive and interactive nature makes it ideal for a wide range of applications, from web development to data science.
 
 *The following are fundamentals I have learned in my Python course.*
 
-## Variables 📦
+## 📦 Variables
 
 Variables are containers for storing data. They can be thought of as boxes during a move: each box has a label identifying its contents.
 ```python
@@ -22,7 +20,7 @@ true_value = True
 false_value = False
 ```
 
-## Conditionals 🛣️
+## 🛣️ Conditionals
 
 Conditional structures allow a program to make decisions based on certain conditions. They are like crossroads on a path: they allow you to decide which direction to take based on certain conditions.
 ```python
@@ -34,7 +32,7 @@ else:
     print("The number is odd")
 ```
 
-## Loops 🔄
+## 🔄 Loops
 
 - **While Loop:** Executes a set of statements repeatedly as long as a specific condition is true.
 ```python
@@ -52,7 +50,7 @@ for number in numbers:
     print(number)
 ```
 
-## Lists 📋
+## 📋 Lists
 
 Lists are ordered collections of elements. Each element in the list has a specific position and can be accessed by its index.
 ```python
@@ -60,7 +58,7 @@ list = [1, 2, 3, 4, 5]
 text_list = ["apple", "banana", "cherry"]
 ```
 
-## Tuples 📦🔒
+## 📦🔒 Tuples
 
 Tuples are ordered and immutable collections of elements. Unlike lists, they cannot be modified once created.
 ```python
@@ -68,7 +66,7 @@ tuple = (1, 2, 3, 4, 5)
 text_tuple = ("red", "green", "blue")
 ```
 
-## Dictionaries 📚
+## 📚 Dictionaries
 
 Dictionaries are collections of key-value pairs. Each value in the dictionary is associated with a unique key that acts as its identifier.
 ```python
@@ -80,7 +78,7 @@ dictionary = {
 }
 ```
 
-## Sets 🌟
+## 🌟 Sets
 
 Sets are unordered collections of unique elements. They are useful when you need to ensure that each element is unique.
 ```python
@@ -88,7 +86,7 @@ Sets are unordered collections of unique elements. They are useful when you need
 set_variable = {1, 2, 3, 4, 5}
 ```
 
-## Functions 🎯
+## 🎯 Functions
 
 Functions are reusable blocks of code that perform a specific task. They help organize and modularize code, making it clearer and easier to maintain.
 ```python
@@ -104,7 +102,7 @@ area_rectangle = calculate_area(base_rectangle, height_rectangle)
 print("The area of the rectangle is:", area_rectangle)
 ```
 
-## Modules 🧰
+## 🧰 Modules
 
 Modules are files that contain Python code. They provide specific functionalities and can be reused in different parts of a program.
 ```python
