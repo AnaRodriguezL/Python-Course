@@ -2,124 +2,124 @@
 
 ## ¿Qué es Python y por qué aprenderlo? 🤔
 
-Python es un lenguaje de programación de alto nivel, interpretado, interactivo y orientado a objetos, creado por el programador neerlandés **Guido Van Rossum a finales de los años 80.** Desde **su lanzamiento en 1991,** Python ha evolucionado significativamente y se ha convertido en uno de los lenguajes de programación más populares del mundo. Se destaca por su sintaxis clara y simple, que facilita su aprendizaje. Además, su capacidad de ser interpretado e interactivo lo hace ideal para una amplia gama de aplicaciones, desde el desarrollo web hasta la ciencia de datos.
+Python is a high-level, interpreted, interactive, and object-oriented programming language created by the Dutch programmer Guido Van Rossum in the late 1980s. Since its release in 1991, Python has evolved significantly and has become one of the most popular programming languages in the world. It is known for its clear and simple syntax, which makes it easy to learn. Additionally, its interpretive and interactive nature makes it ideal for a wide range of applications, from web development to data science.
 
-*Lo que sigue a continuación son fundamentos que he aprendido en mi curso de Python.*
+*The following are fundamentals I have learned in my Python course.*
 
 ## Variables 📦
 
-Las variables son contenedores para almacenar datos. Pueden ser pensadas como cajas durante una mudanza: cada caja tiene una etiqueta que identifica su contenido.
+Variables are containers for storing data. They can be thought of as boxes during a move: each box has a label identifying its contents.
 ```python
-# Variables numéricas
-numero_entero = 10
-numero_decimal = 3.14
+# Numeric variables
+integer_number = 10
+decimal_number = 3.14
 
-# Variables de texto
-texto = "¡Hola, mundo!"
+# Text variables
+text = "Hello, world!"
 
-# Variables booleanas
-verdadero = True
-falso = False
+# Boolean variables
+true_value = True
+false_value = False
 ```
 
-## Condicionales 🛣️
+## Conditionals 🛣️
 
-Las estructuras condicionales permiten que un programa tome decisiones basadas en ciertas condiciones. Son como encrucijadas en un camino: te permiten decidir qué dirección tomar basándote en ciertas condiciones.
+Conditional structures allow a program to make decisions based on certain conditions. They are like crossroads on a path: they allow you to decide which direction to take based on certain conditions.
 ```python
-# Condicionales para verificar si un número es par o impar
-numero = 10
-if numero % 2 == 0:
-    print("El número es par")
+# Conditionals to check if a number is even or odd
+number = 10
+if number % 2 == 0:
+    print("The number is even")
 else:
-    print("El número es impar")
+    print("The number is odd")
 ```
 
-## Ciclos 🔄
+## Loops 🔄
 
-- **Ciclo While:** Se ejecuta un conjunto de instrucciones repetidamente mientras se cumpla una condición específica.
+- **While Loop:** Executes a set of statements repeatedly as long as a specific condition is true.
 ```python
-# Ciclo while para imprimir números del 1 al 5
-numero = 1
-while numero <= 5:
-    print(numero)
-    numero += 1
+# While loop to print numbers from 1 to 5
+number = 1
+while number <= 5:
+    print(number)
+    number += 1
 ```
-- **Ciclos For:** Recorren cada elemento en una secuencia de manera ordenada.
+- **For Loops:** Iterate over each item in a sequence in an orderly manner.
 ```python
-# Ciclo for para recorrer una lista e imprimir cada elemento
-numeros = [1, 2, 3, 4, 5]
-for numero in numeros:
-    print(numero)
-```
-
-## Listas 📋
-
-Las listas son colecciones ordenadas de elementos. Cada elemento en la lista tiene una posición específica y puede ser accedido mediante su índice.
-```python
-lista = [1, 2, 3, 4, 5]
-lista_texto = ["manzana", "banana", "cereza"]
+# For loop to iterate over a list and print each element
+numbers = [1, 2, 3, 4, 5]
+for number in numbers:
+    print(number)
 ```
 
-## Tuplas 📦🔒
+## Lists 📋
 
-Las tuplas son colecciones ordenadas e inmutables de elementos. A diferencia de las listas, no pueden ser modificadas una vez creadas.
+Lists are ordered collections of elements. Each element in the list has a specific position and can be accessed by its index.
 ```python
-tupla = (1, 2, 3, 4, 5)
-tupla_texto = ("rojo", "verde", "azul")
+list = [1, 2, 3, 4, 5]
+text_list = ["apple", "banana", "cherry"]
 ```
 
-## Diccionarios 📚
+## Tuples 📦🔒
 
-Los diccionarios son colecciones de pares clave-valor. Cada valor en el diccionario está asociado con una clave única que actúa como su identificador.
+Tuples are ordered and immutable collections of elements. Unlike lists, they cannot be modified once created.
 ```python
-# Es similar al formato JSON
-diccionario = {
-    "nombre": "Juan", 
-    "edad": 30, 
-    "ciudad": "Madrid"
+tuple = (1, 2, 3, 4, 5)
+text_tuple = ("red", "green", "blue")
+```
+
+## Dictionaries 📚
+
+Dictionaries are collections of key-value pairs. Each value in the dictionary is associated with a unique key that acts as its identifier.
+```python
+# It's similar to JSON format
+dictionary = {
+    "name": "John", 
+    "age": 30, 
+    "city": "Madrid"
 }
 ```
 
-## Conjuntos 🌟
+## Sets 🌟
 
-Los conjuntos son colecciones desordenadas de elementos únicos. Son útiles cuando se necesita garantizar que cada elemento sea único.
+Sets are unordered collections of unique elements. They are useful when you need to ensure that each element is unique.
 ```python
-# Variables de conjunto (set)
-conjunto = {1, 2, 3, 4, 5}
+# Set variables
+set_variable = {1, 2, 3, 4, 5}
 ```
 
-## Funciones 🎯
+## Functions 🎯
 
-Las funciones son bloques de código reutilizable que realizan una tarea específica. Ayudan a organizar y modularizar el código, haciéndolo más claro y fácil de mantener.
+Functions are reusable blocks of code that perform a specific task. They help organize and modularize code, making it clearer and easier to maintain.
 ```python
-# Definición de una función para calcular el área de un rectángulo
-def calcular_area(base, altura):
-    area = base * altura
+# Definition of a function to calculate the area of a rectangle
+def calculate_area(base, height):
+    area = base * height
     return area
 
-# Llamada a la función y almacenamiento del resultado en una variable
-base_rectangulo = 5
-altura_rectangulo = 3
-area_rectangulo = calcular_area(base_rectangulo, altura_rectangulo)
-print("El área del rectángulo es:", area_rectangulo)
+# Function call and storing the result in a variable
+base_rectangle = 5
+height_rectangle = 3
+area_rectangle = calculate_area(base_rectangle, height_rectangle)
+print("The area of the rectangle is:", area_rectangle)
 ```
 
-## Módulos 🧰
+## Modules 🧰
 
-Los módulos son archivos que contienen código Python. Proporcionan funcionalidades específicas y pueden ser reutilizados en diferentes partes de un programa.
+Modules are files that contain Python code. They provide specific functionalities and can be reused in different parts of a program.
 ```python
-# Creación de un módulo llamado operaciones_matematicas.py
-# Este módulo contiene una función para sumar dos números
-# Nombre del archivo: operaciones_matematicas.py
+# Creation of a module named math_operations.py
+# This module contains a function to add two numbers
+# File name: math_operations.py
 
-def suma(a, b):
+def addition(a, b):
     return a + b
 ```
 ```python
-# Importación del módulo operaciones_matematicas
-import operaciones_matematicas
+# Importing the math_operations module
+import math_operations
 
-# Uso de la función suma del módulo
-resultado_suma = operaciones_matematicas.suma(3, 5)
-print("La suma es:", resultado_suma)
+# Using the addition function from the module
+sum_result = math_operations.addition(3, 5)
+print("The sum is:", sum_result)
 ```
