@@ -1,6 +1,4 @@
-# HTTP Methods in the API
-
-## What is HTTP?
+# HTTP Methods in the API 🌐
 
 HTTP, or Hypertext Transfer Protocol, is a system that defines how messages are sent and received over the web. In the API to be built, HTTP will be used to communicate with the server and perform different actions on the data, such as creating, retrieving, modifying, or deleting information. 🌐
 
