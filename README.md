@@ -1,6 +1,6 @@
 # Python 🐍
 
-## ¿Qué es Python y por qué aprenderlo? 🤔
+## What is Python and Why Learn It? 🤔
 
 Python is a high-level, interpreted, interactive, and object-oriented programming language created by the Dutch programmer Guido Van Rossum in the late 1980s. Since its release in 1991, Python has evolved significantly and has become one of the most popular programming languages in the world. It is known for its clear and simple syntax, which makes it easy to learn. Additionally, its interpretive and interactive nature makes it ideal for a wide range of applications, from web development to data science.
 
