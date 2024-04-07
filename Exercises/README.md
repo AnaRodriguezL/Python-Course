@@ -1,10 +1,10 @@
-# Ejercicios del Curso de Python 🐍
+# Exercises from the Python Course 🐍
 
-Aquí encontrarás una colección de ejercicios que se realizaron durante el curso de Python. Estos ejercicios fueron diseñados para practicar y reforzar los conceptos que se aprendieron.
+Here you will find a collection of exercises that were carried out during the Python course. These exercises were designed to practice and reinforce the concepts that were learned.
 
-Estos ejercicios están organizados por los diferentes temas que fueron cubiertos en el curso. Cada carpeta contiene ejercicios relacionados con un tema específico, como:
+These exercises are organized by the different topics covered in the course. Each folder contains exercises related to a specific topic, such as:
 
-- **Variables_y_Tipos_de_Datos:** Ejercicios relacionados con la definición y uso de variables, así como los diferentes tipos de datos en Python.
-- **Estructuras_de_Control:** Ejercicios que involucran el uso de estructuras de control como condicionales y bucles.
-- **Estructuras_de_Datos:** Ejercicios centrados en el uso de estructuras de datos como listas, tuplas, diccionarios y conjuntos.
-- **Funciones_y_Modulos:** Ejercicios que exploran la definición y uso de funciones, así como la importación de módulos en Python.
+- **Variables_and_Data_Types:** Exercises related to the definition and use of variables, as well as the different data types in Python.
+- **Control_Structures:** Exercises involving the use of control structures such as conditionals and loops.
+- **Data_Structures:** Exercises focused on the use of data structures such as lists, tuples, dictionaries, and sets.
+- **Functions_and_Modules:** Exercises that explore the definition and use of functions, as well as the importing of modules in Python.
